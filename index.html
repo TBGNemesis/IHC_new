@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brawl Stars Fan Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="#" class="logo">
+        <img
+          width="50"
+          height="50"
+          src="imagen/logo.png"
+          alt="Logo Brawl Stars"
+        />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="#">Promociones</a></li>
+        <li>
+          <a href="#">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Modos de Juego</a></li>
+            <li><a href="#">Brawlers</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Actualizaciones</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Privilegios</a></li>
+        <li><a href="#">Comunidad</a></li>
+        <li><a href="#contactanos">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <section class="seccion-promo">
+      <div class="div-gral-promo">
+        <div class="div-promo-texto">
+          <h2>¡Bienvenido al mundo de Brawl Stars!</h2>
+
+          <p>
+            <strong>Brawl Stars</strong> es un dinámico juego de acción y
+            batallas multijugador desarrollado por <strong>Supercell</strong>,
+            los creadores de Clash of Clans y Clash Royale. En este frenético
+            título, los jugadores compiten en equipos de 3 contra 3 o en
+            solitario en una variedad de modos, cada uno con objetivos únicos.
+          </p>
+
+          <p>
+            Desbloquea nuevos <em>Brawlers</em>, cada uno con habilidades y
+            personalidades distintas, y participa en eventos especiales, torneos
+            y desafíos que pondrán a prueba tu estrategia y reflejos. ¡Lucha,
+            mejora tus personajes y demuestra quién manda en la arena!
+          </p>
+          <button>Leer más...</button>
+        </div>
+        <div class="div-promo-img">
+          <img src="imagen/bral.jpg" alt="bral.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <
+    <section class="seccion-privi">
+      <div class="div-gral-privi">
+        <div class="div-privi-texto">
+          <h2>Modos de juego y recompensas</h2>
+
+          <p>
+            En Brawl Stars podrás disfrutar de una variedad de modos de juego:
+            desde <strong>“Atrapa Gemas”</strong> y
+            <strong>“Supervivencia”</strong>, hasta <strong>“Asedio”</strong> o
+            <strong>“Balón Brawl”</strong>. Cada partida es rápida, intensa y
+            llena de acción, ideal para jugar solo o con tus amigos.
+          </p>
+
+          <p>
+            A medida que avanzas, podrás desbloquear recompensas exclusivas,
+            mejorar tus Brawlers y participar en eventos especiales. La
+            competencia es feroz, pero las victorias son épicas. ¡Conviértete en
+            una leyenda del Brawl!
+          </p>
+        </div>
+        <div class="div-privi-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=3CLfkU2INlY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Únete a nuestra comunidad de jugadores de Brawl Stars</p>
+
+        <form class="formulario">
+          <!--DIV1-INPUT=TEXT-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+              <option value="">Seleccione un país</option>
+              <option value="peru">Perú</option>
+              <option value="argentina">Argentina</option>
+              <option value="brazil">Brasil</option>
+              <option value="mexico">México</option>
+              <option value="chile">Chile</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="noticias" />
+                  Noticias del juego</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="torneos" />
+                  Torneos y eventos</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="brawlers" />
+                  Nuevos Brawlers</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="recompensas"
+                  />
+                  Recompensas y sorteos</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--DIV4-RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" /> Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" /> Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      crossorigin=""
+      type="text/javascript"
+      src="https://codesandbox.io/static/js/watermark-button.eeb14a97b.js"
+    ></script>
+
+    <iframe
+      id="sb__open-sandbox23"
+      style="
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        bottom: 16px;
+        right: 16px;
+        border: none;
+        width: 118px;
+        height: 36px;
+        z-index: 9999999999999;
+      "
+    ></iframe>
+  </body>
+  <!-- PIE DE PAGINA -->
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre de sitio -->
+        <div class="footer-brand">
+          <img src="imagen/logo.png" alt="Logo" class="footer-logo" />
+          <p>BRAWL STARS</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <!-- Dentro de href llama a un documento pdf con la poltica-->
+          <a href="#">Términos y Condiciones</a>
+          <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+          <a href="/documentos/obtenerDocumento.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Redes sociales con íconos personalizados -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+</html>

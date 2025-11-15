@@ -1,0 +1,267 @@
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.Menu-Horizontal li {
+  position: relative;
+}
+
+.Menu-Horizontal li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: blue;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.Menu-Horizontal li a:hover {
+  color: white;
+  background-color: red;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Menu-Vertical li a {
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+.Menu-Vertical li:hover {
+  background-color: #f5f5f5;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.seccion-promo {
+  padding: 100px 20px 60px;
+  background-color: white;
+}
+
+.div-gral-promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.div-promo-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.div-promo-texto h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.div-promo-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-promo-texto button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.div-promo-texto button:hover {
+  background-color: #ffb347;
+  transform: scale(1.03);
+}
+
+.div-promo-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.div-promo-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.seccion-privi {
+  padding: 60px 20px;
+  background-color: #f9f9ff;
+}
+
+.div-gral-privi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.div-privi-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.div-privi-texto h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.div-privi-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-privi-video {
+  flex: 1;
+  min-width: 300px;
+}
+
+.div-privi-video iframe {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.seccion-formulario {
+  background-color: #95b5f1;
+  padding: 60px 20px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+}
+
+.div-cont-formulario {
+  background-color: #aff6f6;
+  padding: 30px;
+  border: 2px solid #8002f6;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-cont-formulario h2 {
+  text-align: center;
+  color: #3b018f;
+  margin-bottom: 10px;
+}
+
+.div-cont-formulario p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.campo {
+  background-color: #d7b8f4;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+
+.formulario label {
+  display: block;
+  color: #2e0159;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #5b037c;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+}
+
+.formulario input[type="text"]:focus,
+.formulario select:focus {
+  outline: none;
+  border-color: #8002f6;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 8px;
+  background-color: #dcbdf3;
+  border: 1px solid #5b037c;
+  border-radius: 4px;
+}
+
+.lista-checkbox li,
+.lista-radio li {
+  margin-bottom: 5px;
+}
+
+.formulario button {
+  background-color: #d37cf2;
+  border: 2px solid #5b037c;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.formulario button:hover {
+  background-color: #b85ce6;
+  transform: scale(1.03);
+}
