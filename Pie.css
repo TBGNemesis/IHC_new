@@ -1,9 +1,10 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
-  color: white;
+  background: linear-gradient(180deg, #ffea00, #ff9f00, #ff6a00);
+  color: #fff;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
+  border-top: 4px solid #000;
 }
 
 /* Contenedor flexible para 3 columnas */
@@ -27,9 +28,9 @@
   width: 3.75rem;
   height: auto;
   margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 5px #000);
 }
 
-/* Enlaces legales */
 .footer-links {
   flex: 1;
   min-width: 12.5rem;
@@ -37,12 +38,18 @@
 
 .footer-links a {
   display: block;
-  color: #ccc;
+  color: #0038a8;
   text-decoration: none;
+  font-weight: 700;
   margin: 0.3rem 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-links a:hover {
+  background-color: #0038a8;
   color: #fff;
 }
 
@@ -56,14 +63,16 @@
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out, filter 0.2s;
+  filter: drop-shadow(0 0 4px #000);
 }
 
 .social-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.25) rotate(-5deg);
+  filter: drop-shadow(0 0 6px #fff);
 }
 
-/* Responsive para pantallas pequeñas */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
